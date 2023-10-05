@@ -7,6 +7,7 @@ import com.Sofram.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class Search_Icon {
     SearchIcon searchIcon= new SearchIcon();
@@ -29,6 +30,7 @@ public class Search_Icon {
     @Then("Verify whether the search result is correct")
     public void verify_whether_the_search_result_is_correct() {
 
+        Assert.assertEquals("5 ERGEBNIS GEFUNDEN FÜR “ANTEP FISTIĞI”",searchIcon.sonuc.getText() );
     }
 
 }
