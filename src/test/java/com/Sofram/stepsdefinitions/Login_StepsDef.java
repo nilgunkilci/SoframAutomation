@@ -18,7 +18,7 @@ public class Login_StepsDef {
 
 
         BrowserUtils.waitFor(5);
-        loginPage.spracheCloseButton.click();
+         loginPage.spracheCloseButton.click();
         BrowserUtils.waitFor(5);
         //loginPage.cookiesAblehnenButton.click();
         //BrowserUtils.waitFor(5);
