@@ -16,11 +16,16 @@ public class Register_StepsDef {
 
     @When("The user enters valid {string} and {string} and {string} , {string} and clicks account button")
     public void the_user_enters_valid_and_and_and_clicks_account_button(String firstName, String lastName, String email, String password) {
-        accountPage.createAccount(firstName,lastName,email,password);
+        accountPage.createAccount(firstName, lastName, email, password);
     }
 
     @Then("Verify that the user can create a user account.")
     public void verify_that_the_user_can_create_a_user_account() {
+        accountPage.verifyMyAccount();
+    }
 
+    @When("The user enters valid firstName, lastName, email, password and clicks account button")
+    public void the_user_enters_valid_first_name_last_name_email_password_and_clicks_account_button() {
+        accountPage.createAccount();
     }
 }
