@@ -37,6 +37,8 @@ public class LoginPage extends BasePage {
 
     @FindBy(xpath = "//h1[@class='page-header']")
     public WebElement meinKontoPage;
+    @FindBy(xpath = "//a[text()='Ein Konto erstellen']")
+    public WebElement einKontoErstellen;
 
     public void closeCookiesAndSprache() {
         BrowserUtils.waitFor(5);
