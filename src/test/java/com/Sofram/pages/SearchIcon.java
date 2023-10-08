@@ -15,4 +15,7 @@ public class SearchIcon extends BasePage {
     @FindBy(xpath = "//*[@class='page-header text-center']")
     public WebElement sonuc;
 
+    @FindBy(xpath ="//*[@class='page-header text-center']")
+    public  WebElement karpuz;
+
 }
