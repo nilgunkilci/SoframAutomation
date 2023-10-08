@@ -1,7 +1,7 @@
 @B7SFRM-147
 Feature: Login Sofram on Homepage
 
-  @B7SFRM-147
+  @B7SFRM-158
   Scenario Outline: Positive Login Test
     Given The user is on the Home Page
     When The user clicks to Sing In
