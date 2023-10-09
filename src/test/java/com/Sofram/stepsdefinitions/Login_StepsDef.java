@@ -15,7 +15,7 @@ public class Login_StepsDef {
     public void the_user_is_on_the_home_page() {
         Driver.getDriver().get(ConfigurationReader.get("url"));
         BrowserUtils.waitFor(5);
-        loginPage.spracheCloseButton.click();
+         loginPage.spracheCloseButton.click();
         BrowserUtils.waitFor(5);
         //loginPage.cookiesAblehnenButton.click();
         //BrowserUtils.waitFor(5);

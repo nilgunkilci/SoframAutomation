@@ -1,7 +1,6 @@
 @B7SFRM-147
 Feature: Login Sofram on Homepage
-
-  Background:
+Background:
     Given The user is on the Home Page
     When The user clicks to Sing In
 
