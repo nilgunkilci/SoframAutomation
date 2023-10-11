@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/Sofram/stepsdefinitions",
-        dryRun = false ,
-        tags = "@wip"
+        dryRun =false,
+        tags = "@B7SFRM-186"
 )
 public class CukesRunner {
 }
