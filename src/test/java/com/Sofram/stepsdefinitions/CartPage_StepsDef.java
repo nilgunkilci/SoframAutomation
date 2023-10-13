@@ -41,5 +41,34 @@ public class CartPage_StepsDef {
         Assert.assertEquals("Sepetiniz boş", cartPage.sepetBos.getText());
     }
 
+    @When("Click the product named Dut Pekmezi and Kabuklu Ceviz click Sepete Ekle button")
+    public void click_the_product_named_dut_pekmezi_and_kabuklu_ceviz_click_sepete_ekle_button() {
+        cartPage.accept.click();
+        searchIcon.searchIcon.sendKeys("Dut Pekmezi");
+        searchIcon.enter.click();
+        cartPage.sepeteEKle.click();
+        cartPage.kapat.click();
+        BrowserUtils.waitFor(3);
+        searchIcon.searchIcon.clear();
+        searchIcon.searchIcon.sendKeys("Kabuklu Ceviz");
+        searchIcon.enter.click();
+        cartPage.sepeteEKle.click();
+        cartPage.sepetiGor.click();
+    }
+
+    @Then("Verify that the calculation of the order summary on the Your Cart page.")
+    public void verify_that_the_calculation_of_the_order_summary_on_the_your_cart_page() {
+        Assert.assertEquals("€22,00", cartPage.total.getText());
+    }
+
+    @When("Click on the Alisverise Devam Et button")
+    public void click_on_the_alisverise_devam_et_button() {
+        cartPage.alisveriseDevamEt.click();
+    }
+    @Then("Verify that you can access the previous page with the {string} button on your cart page.")
+    public void verify_that_you_can_access_the_previous_page_with_the_button_on_your_cart_page(String string) {
+        Assert.assertEquals("ANGEBOTE", cartPage.angebot.getText());
+    }
+
 
 }
