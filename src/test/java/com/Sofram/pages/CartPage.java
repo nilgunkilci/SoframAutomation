@@ -26,6 +26,18 @@ public class CartPage extends BasePage{
 
     @FindBy(xpath= "(//*[@class='cart-text'])[2]")
     public WebElement sepetBos;
+
+    @FindBy(xpath= "(//*[@class='halo-sidebar-close button-effect'])[2]")
+    public WebElement kapat;
+
+    @FindBy(xpath= "(//*[@class='cart-total-value'])[4]")
+    public WebElement total;
+
+    @FindBy(xpath= "//*[@class='button button-2 button-continue']")
+    public WebElement alisveriseDevamEt;
+    @FindBy(xpath= "//*[@class='collection-title page-header text-left']")
+    public WebElement angebot;
+
 }
 
 
