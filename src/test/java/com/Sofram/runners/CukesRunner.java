@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/Sofram/stepsdefinitions",
         dryRun = false,
-        tags = "@B7SFRM-148"
+        tags = ""
 )
 public class CukesRunner {
 }
