@@ -46,6 +46,6 @@ Feature:Categories-User Can Select Shopping Subcategory
       | Türkischer Leckerbissen und Pestilenz |
       | Bäckereiprodukte und Desserts         |
       | Spezielle Öle und Saucen              |
-     | Nährmittel                            |
+      | Nährmittel                            |
 
 
