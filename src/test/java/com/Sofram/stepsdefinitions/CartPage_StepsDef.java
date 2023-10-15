@@ -68,6 +68,7 @@ public class CartPage_StepsDef {
     @Then("Verify that you can access the previous page with the {string} button on your cart page.")
     public void verify_that_you_can_access_the_previous_page_with_the_button_on_your_cart_page(String string) {
         Assert.assertEquals("ANGEBOTE", cartPage.angebot.getText());
+
     }
 
 

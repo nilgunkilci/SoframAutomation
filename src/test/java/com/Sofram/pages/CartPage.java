@@ -36,6 +36,7 @@ public class CartPage extends BasePage{
     @FindBy(xpath= "//*[@class='button button-2 button-continue']")
     public WebElement alisveriseDevamEt;
     @FindBy(xpath= "//*[@class='collection-title page-header text-left']")
+
     public WebElement angebot;
 
 
