@@ -1,6 +1,5 @@
 package com.Sofram.stepsdefinitions;
 
-import com.Sofram.utilities.ConfigurationReader;
 import com.Sofram.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

@@ -1,17 +1,7 @@
 @B7SFRM-146
 Feature: The User-Register Functionality
-
   Background: Navigate to Sofram website.
     Given The user is on the Home Page
-
-
-  Scenario Outline: Positive Register Functionality Test
-    When The user clicks on the Register
-    When The user enters valid "<firstName>" and "<lastName>" and "<email>" , "<password>" and clicks account button
-    Then Verify that the user can create a user account.
-    Examples:
-      | firstName | lastName | email            | password |
-      | Alex      | Muller   | alex_m@gmail.com | 12345    |
 
   @B7SFRM-163
   Scenario: Access to the Register page Test

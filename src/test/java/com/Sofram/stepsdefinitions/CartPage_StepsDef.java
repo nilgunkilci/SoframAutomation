@@ -9,7 +9,12 @@ import org.junit.Assert;
 
 public class CartPage_StepsDef {
     CartPage cartPage = new CartPage();
-    SearchIcon searchIcon = new SearchIcon();
+   SearchIcon searchIcon = new SearchIcon();
+
+    @When("User can click the {string} and the {string}")
+    public void user_can_click_the_and_the(String string, String string2) {
+        cartPage.yemeklikler.click();
+      }
 
     @When("Find and click the product named {string}")
     public void find_and_click_the_product_named(String string) {
@@ -17,7 +22,6 @@ public class CartPage_StepsDef {
         searchIcon.searchIcon.sendKeys("Dut Pekmezi");
         searchIcon.enter.click();
     }
-
     @When("I can click {string} and {string} button")
     public void i_can_click_and_button(String string, String string2) {
         cartPage.sepeteEKle.click();
@@ -69,6 +73,4 @@ public class CartPage_StepsDef {
     public void verify_that_you_can_access_the_previous_page_with_the_button_on_your_cart_page(String string) {
         Assert.assertEquals("ANGEBOTE", cartPage.angebot.getText());
     }
-
-
 }
