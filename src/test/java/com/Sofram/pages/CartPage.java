@@ -53,7 +53,6 @@ public class CartPage extends BasePage{
     @FindBy(xpath = "(//*[@class='money-subtotal'])[1]")
     public WebElement price;
    
-  
     @FindBy(xpath= "//*[@class='collection-title page-header text-left']")
     public WebElement angebot;
   
@@ -64,6 +63,7 @@ public class CartPage extends BasePage{
         BrowserUtils.waitFor(2);
         Assert.assertTrue(ihreWarenkorb.isDisplayed());
     }
+
 }
 
 
