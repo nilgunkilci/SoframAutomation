@@ -6,9 +6,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class CartPage_StepsDef {
-
     CartPage cartPage = new CartPage();
-
     @When("User can click the {string} and the {string}")
     public void user_can_click_the_and_the(String string, String string2) {
         cartPage.yemeklikler.click();

@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class RegisterPage extends BasePage {
-    LoginPage loginPage = new LoginPage();
     @FindBy(id = "RegisterForm-FirstName")
     public WebElement firstNameInput;
     @FindBy(id = "RegisterForm-LastName")
@@ -26,8 +25,6 @@ public class RegisterPage extends BasePage {
     public WebElement kontoErstellenPage;
     @FindBy(xpath = "//span[contains(text(),'E-mail')]")
     public WebElement eMailIstUngultig;
-    @FindBy(xpath = "//li[contains(text(),'Diese E-Mail Adresse ist bereits vergeben. Wenn es')]")
-    public WebElement eMailIstVergeben;
     @FindBy(xpath = "//a[@class='link link-underline']//span[@class='text'][contains(text(),'Passwort')]")
     public WebElement passwordistKurz;
 
@@ -109,22 +106,10 @@ public class RegisterPage extends BasePage {
         return actualMessage;
     }
 
-    public String getDisappearingWarningMessage2(String email) {
-        String actualMessage = null;
-        if (email.contains("alexmuller")) {
-            actualMessage = emailInput.getAttribute("validationMessage");
-            System.out.println("actualMessage = " + actualMessage);
-        } else if (!email.contains("alexmuller")) {
-            actualMessage = passwordInput.getAttribute("validationMessage");
-            System.out.println("actualMessage = " + actualMessage);
-        }
-
-        return actualMessage;
-    }
-    public void verifyBlankPasswordmessage(String expectedMessage){
-        String actualMessage =passwordInput.getAttribute("validationMessage");
+    public void verifyBlankPasswordmessage(String expectedMessage) {
+        String actualMessage = passwordInput.getAttribute("validationMessage");
         System.out.println("actualMessage = " + actualMessage);
-        Assert.assertEquals(expectedMessage,actualMessage);
+        Assert.assertEquals(expectedMessage, actualMessage);
     }
 
 }

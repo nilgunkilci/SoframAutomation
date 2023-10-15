@@ -21,7 +21,6 @@ public class Search_Icon_StepsDef {
     public void enter_in_the_search_box_and_click_the_search_button(String string) {
         searchIcon.searchIcon.sendKeys("Antep Fıstığı");
         searchIcon.enter.click();
-
     }
 
     @Then("Verify whether the search result is correct")

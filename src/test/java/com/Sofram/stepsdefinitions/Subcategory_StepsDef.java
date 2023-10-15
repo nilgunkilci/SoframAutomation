@@ -3,8 +3,6 @@ package com.Sofram.stepsdefinitions;
 import com.Sofram.pages.SubcategoryPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class Subcategory_StepsDef {
     SubcategoryPage subcategoryPage = new SubcategoryPage();
