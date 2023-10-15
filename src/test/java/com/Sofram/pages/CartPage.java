@@ -38,6 +38,7 @@ public class CartPage extends BasePage{
     @FindBy(xpath= "//*[@class='collection-title page-header text-left']")
     public WebElement angebot;
 
+
 }
 
 
