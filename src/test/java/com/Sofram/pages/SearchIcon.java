@@ -1,6 +1,5 @@
 package com.Sofram.pages;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.FieldDocument;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

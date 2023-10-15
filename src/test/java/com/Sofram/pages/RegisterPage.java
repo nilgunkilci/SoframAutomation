@@ -19,8 +19,6 @@ public class RegisterPage extends BasePage {
     public WebElement createAccountBtn;
     @FindBy(xpath = "//a[text()='Mein Konto']")
     public WebElement myAccount;
-    @FindBy(xpath = "//span[text()='Alle akzeptieren']")
-    public WebElement cookiesBtn;
     @FindBy(xpath = "//span[text()='Konto erstellen']")
     public WebElement kontoErstellenPage;
     @FindBy(xpath = "//span[contains(text(),'E-mail')]")

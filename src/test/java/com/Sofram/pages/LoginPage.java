@@ -35,12 +35,6 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//a[text()='Ein Konto erstellen']")
     public WebElement einKontoErstellen;
 
-    public void closeCookiesAndSprache() {
-        BrowserUtils.waitFor(5);
-        cookiesCloseButton.click();
-        BrowserUtils.waitFor(5);
-        spracheCloseButton.click();
-    }
     public void login() {
         inputEmailBox.sendKeys(ConfigurationReader.get("userName"));
         inputPasswordBox.sendKeys(ConfigurationReader.get("userPassword"));
